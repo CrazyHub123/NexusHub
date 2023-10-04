@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 
-_G.Scripts.d = "discord.gg/rvnKZH9nFx"
+_G.Scripts = "discord.gg/rvnKZH9nFx"
 
 function protectGui(GUI)
     if syn and syn.protect_gui then
@@ -256,7 +256,7 @@ TextLabel.Position = UDim2.new(0.657665312, 0, 0.708015323, 0)
 TextLabel.Size = UDim2.new(0.152946159, 0, 0.0503816865, 0)
 TextLabel.ZIndex = 25
 TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "get key : \n".._G.Scripts.d
+TextLabel.Text = "get key : \n".._G.Scripts
 TextLabel.TextColor3 = Color3.fromRGB(245, 255, 56)
 TextLabel.TextStrokeTransparency = 0
 TextLabel.TextStrokeColor3 = Color3.fromRGB(0,0,0)
@@ -301,7 +301,7 @@ UICorner_2.Parent = TextButtonA
 
 local a = TextButtonA.MouseButton1Click:Connect(function()
     if setclipboard then
-        setclipboard("https://".._G.Scripts.d)
+        setclipboard("https://".._G.Scripts)
     end
 end)
 
